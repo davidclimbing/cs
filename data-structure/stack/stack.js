@@ -3,8 +3,8 @@ class Stack {
 		this.items = [];
 	}
 
-	push(arg) {
-		this.itmes.push(arg);
+	push(value) {
+		this.items.push(value);
 	}
 
 	pop() {
@@ -31,3 +31,21 @@ class Stack {
 		this.items = [];
 	}
 }
+
+
+const stack = new Stack();
+stack.push(1);
+stack.push(2);
+stack.push(3);
+console.log(stack.peek());
+console.log(stack.pop());
+console.log(stack.peek());
+console.log(stack.isEmpty());
+console.log(stack.clear());
+console.log(stack.isEmpty());
+console.log(stack.peek());
+console.log(stack.pop());
+console.log(stack.peek());
+console.log(stack.isEmpty());
+console.log(stack.clear());
+console.log(stack.isEmpty());
